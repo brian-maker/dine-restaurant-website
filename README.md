@@ -20,6 +20,8 @@ The reservation form shows error messages when invalid information is entered.
 
 The project has a challenging layout especially with the positioning of the images and the background patterns.
 
+A live version of the website can be found here https://dine-resturant-website.netlify.app/
+
 
 
 
