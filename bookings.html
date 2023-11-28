@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="reservations">
+        <div class="reservations-wrapper">
+            <div class="reservations-container">
+                <article class="reservations-article">
+                    <a href="./index.html">
+                        <div class="reservations-logo">
+                            <img src="./images/logo.svg" alt="">
+                        </div>
+                    </a>
+
+                    <div class="reservations-content">
+                        <div class="reservations-text">
+                            <h1>reservations</h1>
+                            <p>we can't wait to host you.If you have any special requirements please feel free to call on the phone number below.We'll be happy to accomodate you.</p>
+                            <a href="#reservation" class="btn dine-btn">Reserve place</a>
+                        </div>
+    
+                        <div class="reservation" id="reservation">
+                            <div class="modal">
+                                <div class="form-input">
+                                    <input type="text"
+                                    class="input-field input-box"
+                                    id="name"
+                                    placeholder="Name"
+                                    name="name"
+                                    minlength="3"
+                                    >
+                                    <p class="errormsg">This field is required</p>
+                                </div>
+
+                                <div class="form-input">
+                                    <input type="email"
+                                    class="input-field input-box"
+                                    id="email"
+                                    placeholder="Email"
+                                    name="email"
+                                    >
+                                    <p class="errormsg">This field is required</p>
+                                </div>
+                                
+                                
+                                <div class="form-date-field">
+                                    
+                                    <div class="date-container">
+                                        <div class="date-pick-date">
+                                            <p class="pick-date datetime-field-name">Pick a date</p>
+                                            <p class="errormsg">This field is required</p>
+                                        </div>
+                                        <div class="date-inputs-container">
+                                            <input type="text"
+                                            name="month"
+                                            id="month"
+                                            placeholder="MM"
+                                            maxlength="2"
+                                            class="input-box"
+                                            >
+                                            <input type="text"
+                                            name="date"
+                                            id="date"
+                                            placeholder="DD"
+                                            maxlength="2"
+                                            class="input-box"
+                                            >
+                                            <input type="text"
+                                            name="year"
+                                            id="year"
+                                            maxlength="4"
+                                            placeholder="YYYY"
+                                            class="input-box"
+                                            >
+
+                                        </div>
+                                    </div>
+
+                                    <div class="date-container time-day">
+                                        <div class="date-pick-date">
+                                            <p class="pick-date time datetime-field-name">Pick a time</p>
+                                            <p class="errormsg">This field is required</p>
+                                        </div>
+                                        <div class="date-inputs-container">
+                                            <input type="text"
+                                            name="hour"
+                                            id="hour"
+                                            placeholder="09"
+                                            maxlength="2"
+                                            class="input-box"
+                                            >
+                                            <input type="text"
+                                            name="minutes"
+                                            id="minutes"
+                                            placeholder="00"
+                                            maxlength="2"
+                                            class="input-box"
+                                            >
+                                            <div class="dropdown-container">
+                                                <div class="dropdown" id="trigger">
+                                                    <div id="selected-meridiem" class="dropdown-selected">
+                                                        AM
+                                                    </div>
+
+                                                    <div 
+                                                        class="dropdown-arrow" id="dropdown-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="11"><path fill="none" stroke="#9E7F66" stroke-width="2" d="M1 1l8 8 8-8"/></svg>
+                                                    </div>
+                                                    <div class="dropdown-items" id="dropdown-menu">
+                                                        <div class="dropdown-item">
+                                                            <svg class="dropdown-item-checkmark checked" xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#9E7F66" stroke-width="2" d="M1 5.897l2.767 2.767L11.432 1"/></svg>
+                                                            <p class="t-form">AM</p>
+                                                        </div>
+                                                        <div class="dropdown-item">
+                                                            <svg class="dropdown-item-checkmark" xmlns="http://www.w3.org/2000/svg" width="13" height="11"><path fill="none" stroke="#9E7F66" stroke-width="2" d="M1 5.897l2.767 2.767L11.432 1"/></svg>
+    
+                                                            <p class="t-form">PM</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="form-number-picker">
+                                    <button class="number-picker-button" id="minus">
+                                        <span class="minus">minus</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z"/></svg>
+                                    </button>
+                                    <p class="t-form number-people"><span id="number-of-people">4</span> people</p>
+                                    <button class="number-picker-button" id="plus">
+                                        <span class="plus">plus</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z"/></svg>
+                                    </button>
+                                </div>
+                                <button class="btn btn-light btn-make-reservation" id="btn-reservation">Make Reservation</button>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </article>
+                
+
+                
+            </div>
+
+            <div class="reservations-middle">
+                <div class="reservations-middle-wrapper">
+                    <img src="./images/patterns/pattern-lines.svg" alt="">
+                </div>
+                
+            </div>
+
+            <footer class="reservations-footer">
+                <div class="reservations-footer-wrapper">
+                     <div class="reservations-footer-logo">
+                         <img src="./images/logo.svg" alt="">
+                     </div>
+                     <div class="reservations-footer-container">
+                         <div class="address">
+                             <p class="city">marwaite,sedbergh <br>cumbria</p>
+                             <p class="contact">+00 44 123 4567</p>
+                         </div> 
+     
+                         <div class="times">
+                             <h4>open times</h4>
+                             <p>mon - fri: 09:00am - 10:00pm</p>
+                             <p>sat - sun: 09:00am - 11:30pm</p>
+                         </div>
+                     </div>
+                 
+                </div>
+             </footer>
+            
+        </div>
+    </section>
+    <script src="bookings.js"></script>
+</body>
+</html>
